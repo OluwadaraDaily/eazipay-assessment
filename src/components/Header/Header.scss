@@ -1,0 +1,53 @@
+header {
+  width: 100%;
+  border: 1px solid green;
+  padding: 15px 0;
+
+  .header__div {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      flex: 3;
+
+      &-logo {
+        flex: .5;
+        margin-right: 10px;
+      }
+
+      &-links {
+        flex: 4;
+        list-style: none;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        a {
+          color: #000;
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+
+      }
+    }
+
+    &__cta {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex: 1;
+      justify-content: flex-end;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.footer {
+  padding: 50px 0;
+  &__div {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__credits {
+      .copyright {
+        margin: 50px 0;
+      }
+      .social-links {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+
+    &__services {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 50px;
+      .service-list {
+        .title {
+          font-family: "Aeonik Regular";
+          font-weight: 600;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+            font-family: "Aeonik Regular";
+            color: #7C7C7C;
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+
+          .send-email {
+            display: flex;
+            align-items: center;
+            background-color: #F2F1F1;
+            padding: 10px;
+            border-radius: 16px;
+            .email-input {
+              width: 255px;
+              border: none;
+              background-color: transparent;
+              outline: none;
+
+              &::placeholder {
+                font-family: "Aeonik Regular";
+              }
+            }
+            .send-btn {
+              cursor: pointer;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

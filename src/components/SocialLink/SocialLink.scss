@@ -1,0 +1,15 @@
+.social-link {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #F2F1F1;
+  cursor: pointer;
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

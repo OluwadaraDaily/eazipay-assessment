@@ -67,6 +67,11 @@
 }
 
 @font-face {
+  font-family: "Made Mellow Semi Bold";
+  src: url(../assets/fonts/made-mellow-personal-use/MADEMellowPERSONALUSE-SemiBold.otf);
+}
+
+@font-face {
   font-family: "Made Mellow Bold";
   src: url(../assets/fonts/made-mellow-personal-use/MADEMellowPERSONALUSE-Bold.otf);
 }

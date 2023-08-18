@@ -1,0 +1,249 @@
+.intro {
+  padding: 60px 0;
+  position: relative;
+  background: url(../../assets/images/gradients.png);
+
+  &__div {
+    width: 85%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &-left {
+      max-width: 560px;
+      &__text-section {
+        margin-bottom: 40px;
+        .header-text {
+          font-family: "Made Mellow Semi Bold";
+          font-size: 64px;
+          line-height: 72px;
+          margin-bottom: 15px;
+          color: #292A29;
+          .green {
+            color: #11453B;
+          }
+          .yellow {
+            color: #B4A572;
+          }
+          .red {
+            color: #EA4E4B;
+          }
+        }
+        .text {
+          margin-bottom: 20px;
+        }
+      }
+      &__download-options {
+        .header-text {
+          color: #000000;
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .download-cards {
+          display: flex;
+          gap: 10px;
+        }
+      }
+    }
+  }
+
+  .intro-image {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.customers {
+  background: url(../../assets/images/wave.png);
+  padding: 150px 0;
+
+  &__header-text-section {
+    text-align: center;
+    margin-bottom: 50px;
+    .header-text {
+      font-family: "Made Mellow Semi Bold";
+      font-size: 64px;
+      line-height: 1;
+      margin-bottom: 15px;
+      color: #11453B;
+      font-weight: 700;
+    }
+    .text {
+      color: #000000;
+      font-size: 20px;
+    }
+  }
+
+  &__cards-section {
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+
+    .card {
+      position: absolute;
+      top: 0;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card-1 {
+      left: 0;
+      z-index: 1;
+    }
+    .card-2 {
+      left: 30%;
+      z-index: 2;
+    }
+    .card-3 {
+      left: 60%;
+      z-index: 3;
+    }
+
+    .card-1:hover ~ .card-2 {
+      transform: translateX(25%);
+    }
+
+    .card-2:hover {
+      transform: translateX(-35%);
+    }
+  }
+
+  &__contact {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .text {
+      max-width: 620px;
+      font-size: 20px;
+      line-height: 24px;
+
+      .email-text {
+        color: #EA4E4B;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.how-it-works {
+  padding: 100px 0;
+  &__header-text-section {
+    text-align: center;
+    margin-bottom: 50px;
+    .header-text {
+      font-family: "Made Mellow Semi Bold";
+      font-size: 64px;
+      line-height: 1;
+      margin-bottom: 15px;
+      color: #11453B;
+      font-weight: 700;
+    }
+    .text {
+      font-family: "Aeonik Regular";
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  &__picture {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+
+    .absolute-bg {
+      position: absolute;
+      left: -10%;
+      z-index: -1;
+    }
+  }
+}
+
+.salary-payment {
+  position: relative;
+  background-color: rgb(234, 78, 75, 0.1);
+  background-image: url(../../assets/images/salary-bg.svg);
+  padding: 100px 0;
+  .absolute-bg-top {
+    position: absolute;
+    top: 0;
+    left: 10%;
+  }
+  &__div {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-left {
+      .text-section {
+        .header-text {
+          font-family: "Made Mellow Semi Bold";
+          font-size: 64px;
+          line-height: 72px;
+          margin-bottom: 45px;
+          color: #292A29;
+
+          .red {
+            color: #EA4E4B;
+          }
+        }
+
+        .subscribe {
+          h6.text {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+          .download-cards {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.demo {
+  position: relative;
+  padding: 100px 0;
+
+  .absolute-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+  }
+  .absolute-bg-left {
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+  &__div {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-left {
+      .header-text {
+        font-family: "Made Mellow Semi Bold";
+        font-size: 64px;
+        line-height: 72px;
+        margin-bottom: 20px;
+        color: #11453B;
+      }
+      .text {
+        font-family: "Aeonik Regular";
+        font-size: 24px;
+      }
+    }
+  }
+}
